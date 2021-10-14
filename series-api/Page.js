@@ -32,7 +32,6 @@ class Page {
 
   printCard() {
     this.series.map((serie) => {
-      console.log(serie);
       new Card(serie, this.list);
     });
   }

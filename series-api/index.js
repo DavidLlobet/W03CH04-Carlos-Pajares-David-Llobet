@@ -1,4 +1,5 @@
 import Page from "./Page.js";
+import SerieService from "./SerieService.js";
 
 const theSopranos = {
   id: 1,
@@ -61,3 +62,14 @@ const atypical = {
 const series = [theSopranos, gameOfThrones, madMen, sixFeetUnder, atypical];
 
 new Page(series);
+
+/* const seriesData = [];
+
+function getValues(value) {
+  seriesData.push(value);
+}
+
+const listaSeries = new SerieService();
+
+listaSeries.getSeries().then((napo) => getValues(napo));
+console.log(seriesData); */

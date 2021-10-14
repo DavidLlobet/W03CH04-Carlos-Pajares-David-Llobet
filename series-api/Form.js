@@ -1,11 +1,11 @@
 class Form {
-  element,
-  parentElement,
-  constructor(parentElement, className,tag ="form"){
-    this.element = document.createElement(tag)
-    this.element.className = className
-    this.parentElement = parentElement
-    this.parentElement.append(this.element)
+  element;
+  parentElement;
+  constructor(parentElement, className, tag = "form") {
+    this.element = document.createElement(tag);
+    this.element.className = className;
+    this.parentElement = parentElement;
+    this.parentElement.append(this.element);
     this.element.innerHTML = `
             <div class="form-block">
               <label for="title">Title:</label>
@@ -26,8 +26,8 @@ class Form {
             <div class="form-block">
               <button type="submit">Create</button>
             </div>
-          `
+          `;
   }
 }
 
-export default Form
+export default Form;

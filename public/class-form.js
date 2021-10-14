@@ -1,15 +1,12 @@
-
-
-const section1 = document.createElement
 class Form {
   element,
   parentElement,
-  constructor(parentElement, tag="form"){
+  constructor(parentElement, className,tag ="form"){
     this.element = document.createElement(tag)
     this.element.className = className
     this.parentElement = parentElement
     this.parentElement.append(this.element)
-    this.element.innerHTML = `<form>
+    this.element.innerHTML = `
             <div class="form-block">
               <label for="title">Title:</label>
               <input type="text" id="title">
@@ -29,6 +26,8 @@ class Form {
             <div class="form-block">
               <button type="submit">Create</button>
             </div>
-          </form>`
+          `
   }
 }
+
+export default Form
